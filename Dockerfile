@@ -1,4 +1,4 @@
-FROM golang:1.12 as gobuilder
+FROM golang:1.13 as gobuilder
 COPY . /work
 WORKDIR /work
 RUN useradd app
