@@ -7,9 +7,9 @@
 ## set env GOPROXY right
 for China
 ```bash
-https://goproxy.io,direct
+GOPRXY=https://goproxy.io,direct
 ```
-for other area
+for other areas
 ```bash
 GOPRXY=https://proxy.golang.org,direct
 ```
