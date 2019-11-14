@@ -1,8 +1,10 @@
 FROM golang:1.13 as gobuilder
+ARG goproxy
 COPY . /work
 WORKDIR /work
 RUN useradd app
-RUN go build -ldflags="-w -s" -o hello
+RUN GOPROXY=$goproxy go build -ldflags="-w -s" -o hello
+
 
 FROM scratch
 COPY --from=gobuilder /work/hello /usr/bin/hello
