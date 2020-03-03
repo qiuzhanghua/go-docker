@@ -7,11 +7,11 @@
 ## set env GOPROXY right
 for China
 ```bash
-GOPRXY=https://goproxy.io,direct
+GOPROXY=https://goproxy.io,direct
 ```
 for other areas
 ```bash
-GOPRXY=https://proxy.golang.org,direct
+GOPROXY=https://proxy.golang.org,direct
 ```
 
 ## run locally
